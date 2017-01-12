@@ -1,5 +1,15 @@
-global class {{ api_name }} implements Database.Batchable<sObject> {
-	
+global class {{ api_name }} implements Database.Batchable<sObject>, Schedulable {
+/**************************************************************************************
+-- - Author        : <Company Name>
+-- - Description   : <short description>
+--
+-- Maintenance History: 
+--
+-- Date         Name  Version  Remarks 
+-- -----------  ----  -------  -------------------------------------------------------
+-- DD-MMM-YYYY  <TRIGRAM>    1.0     Initial version
+--------------------------------------------------------------------------------------
+**************************************************************************************/	
 	String query;
 	
 	global {{ api_name }}() {
@@ -17,5 +27,7 @@ global class {{ api_name }} implements Database.Batchable<sObject> {
 	global void finish(Database.BatchableContext BC) {
 		
 	}
-	
+	global void execute(SchedulableContext sc) {
+        	Database.executeBatch(new {{ api_name }}());
+    	}
 }
