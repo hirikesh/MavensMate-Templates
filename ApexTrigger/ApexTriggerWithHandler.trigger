@@ -11,7 +11,7 @@ trigger {{ api_name }} on {{ object_name }} (after delete, after insert, after u
 --------------------------------------------------------------------------------------
 **************************************************************************************/ 							
 
-    {{ api_name }}TriggerHandler handler = new {{ api_name }}TriggerHandler();
+    {{ object_name  }}TriggerHandler handler = new {{ object_name  }}TriggerHandler();
 
     if(Trigger.isBefore && Trigger.isInsert) {
         handler.handleBeforeInsert(Trigger.new);
