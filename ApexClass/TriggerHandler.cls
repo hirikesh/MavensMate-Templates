@@ -17,25 +17,52 @@ public class {{ api_name }}
     public {{ api_name }}(){
        // userBypass = CS_Bypass__c.getInstance(UserInfo.getUserId());  
     } 
-    /*
-	****************************************************************************************
-	* Sample code
-	********************************************************************************************
-	public void handleAfterUpdate(List<Opportunity> lstOppNew,List<Opportunity> lstOppOld){
-		Map<String,Id> mapRecTypeDevNameToId= AP_Constants.getDeveloperIdMap(AP_Constants.sobjectOpp);
-		Map<Id,Opportunity> mapOppIdToOpp = new Map<Id,Opportunity>(); //AP10
-        
-		for(integer i=0;i<lstOppNew.size();i++){
-			if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){
-				if(lstOppNew[i].RecordTypeId==mapRecTypeDevNameToId.get(AP_Constants.rtOppAaPStd)&&
-					lstOppNew[i].AccountId != lstOppOld[i].AccountId){
-						mapOppIdToOpp.put(lstOppNew[i].Id,lstOppNew[i]);
-				}
-			}           
-		}
-		if(mapOppIdToOpp.size()>0){
-			AP10_SetOpportunityPartners.setPartners(mapOppIdToOpp,setAccOldId,'Y');
+	
+	public void handleBeforeInsert(List<{{ object_name }}> lst{{ object_prefix }}New){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
 		}
 	}
-	*/
+	
+	public void handleBeforeUpdate(List<{{ object_name }}> lst{{ object_prefix }}New,List<{{ object_name }}> lst{{ object_prefix }}Old){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleBeforeDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleBeforeUndelete(List<{{ object_name }}> lst{{ object_prefix }}New){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleAfterInsert(List<{{ object_name }}> lst{{ object_prefix }}New){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleAfterUpdate(List<{{ object_name }}> lst{{ object_prefix }}New,List<{{ object_name }}> lst{{ object_prefix }}Old){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleAfterDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
+	
+	public void handleAfterUndelete(List<{{ object_name }}> lst{{ object_prefix }}New){		
+		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
+		}
+	}
 }
