@@ -14,32 +14,6 @@
             ]
         },
         {  
-            "name":"ApexInterface",
-            "file_name":"ApexInterface.cls",
-            "description":"The default template for an Apex Interface",
-            "author":"Amey Nevrekar",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"The default template for an Apex Template",
-                    "default":"ApexInterface"
-                }
-            ]
-        },
-        {  
-            "name":"Auth Registration Handler",
-            "file_name":"AuthRegistrationHandler.cls",
-            "description":"Registration Handler to manage logins for Auth. Providers",
-            "author":"James Melville",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyRegHandler"
-                }
-            ]
-        },
-        {  
             "name":"Batch",
             "file_name":"BatchApexClass.cls",
             "description":"Batch Apex Class",
@@ -53,19 +27,6 @@
             ]
         },
         {  
-            "name":"BDD Unit Test",
-            "file_name":"BDDUnitTestApexClass.cls",
-            "description":"Behaviour Driven Development Unit test class",
-            "author":"Paul Hardaker @comic96",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyBDDClass"
-                }
-            ]
-        },
-        {  
             "name":"Controller Extension",
             "file_name":"ControllerExtension.cls",
             "description":"Controller extension Apex Class",
@@ -75,171 +36,6 @@
                     "name":"api_name",
                     "description":"Apex Class API Name",
                     "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"Custom Exception",
-            "file_name":"ExceptionApexClass.cls",
-            "description":"A custom exception class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"Custom Iterable",
-            "file_name":"CustomIterable.cls",
-            "description":"A custom iterable class",
-            "author":"Jean-Philippe Monette @jpmonette",
-            "params":[ 
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyCustomIterable"
-                },
-                {  
-                    "name":"type_name",
-                    "description":"Type name",
-                    "default":"Account"
-                },
-                {  
-                    "name":"iterator_class_name",
-                    "description":"Iterator Apex Class API Name",
-                    "default":"MyCustomIteror"
-                }
-            ]
-        },
-        {  
-            "name":"Custom Iterator",
-            "file_name":"CustomIterator.cls",
-            "description":"A custom iterator class",
-            "author":"Jean-Philippe Monette @jpmonette",
-            "params":[ 
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyCustomIterable"
-                },
-                {  
-                    "name":"type_name",
-                    "description":"Type name",
-                    "default":"Account"
-                }
-            ]
-        },
-        {  
-            "name":"DomainClass",
-            "file_name":"DomainClass.cls",
-            "description":"Apex Enterprise Patterns Domain Class",
-            "author":"Andy Fawcett @andyinthecloud",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Domain class name (typically plural)",
-                    "default":"Invoices"
-                },
-                {  
-                    "name":"object_name",
-                    "description":"API name of the Standard or Custom Object",
-                    "default":"Invoice__c"
-                }
-            ]
-        },
-        {  
-            "name":"DomainObjectBuilder",
-            "file_name":"DomainObjectBuilderClass.cls",
-            "description":"Apex Enterprise Patterns Domain Object Builder Class",
-            "author":"Jon Davis @jondavis9898",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Domain Object Builder class name",
-                    "default":"Invoice_t"
-                },
-                {  
-                    "name":"base_name",
-                    "description":"Domain Object Builder Base class name",
-                    "default":"Domain_t"
-                },                
-                {  
-                    "name":"object_name",
-                    "description":"API name of the Standard or Custom Object",
-                    "default":"Invoice__c"
-                },
-                {  
-                    "name":"mother_name",
-                    "description":"Method name for empty Builder Object Mother method",
-                    "default":"anInvoice"
-                }                
-            ]
-        },        
-        {  
-            "name":"DomainObjectBuilderBase",
-            "file_name":"DomainObjectBuilderBaseClass.cls",
-            "description":"Apex Enterprise Patterns Domain Object Builder Base Class",
-            "author":"Jon Davis @jondavis9898",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Domain Object Builder Base class name",
-                    "default":"Domain_t"
-                }
-            ]
-        },               
-        {  
-            "name":"Email Service",
-            "file_name":"EmailServiceApexClass.cls",
-            "description":"Template for an Apex Email Service",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"HTTP Callout Mock",
-            "file_name":"HttpCalloutMock.cls",
-            "description":"Http callout mock class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"No Constructor",
-            "file_name":"ApexClassNoConstructor.cls",
-            "description":"The default template for an Apex Class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {
-            "name":"Queueable",
-            "file_name":"QueueableApexClass.cls",
-            "description":"A Queueable class",
-            "author":"Michael Fairchild",
-            "params":[
-                {
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyQueueableApexClass"
                 }
             ]
         },
@@ -266,63 +62,6 @@
                 }
             ]
         },
-        {
-            "name":"Schedulable",
-            "file_name":"SchedulableApexClass.cls",
-            "description":"A Schedulable class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"SelectorClass",
-            "file_name":"SelectorClass.cls",
-            "description":"Apex Enterprise Patterns Selector Class",
-            "author":"Andy Fawcett @andyinthecloud",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Selector class name (typically plural e.g. AccountsSelector)",
-                    "default":"InvoicesSelector"
-                },
-                {  
-                    "name":"object_name",
-                    "description":"API name of the Standard or Custom Object",
-                    "default":"Invoice__c"
-                }
-            ]
-        },
-        {  
-            "name":"ServiceClass",
-            "file_name":"ServiceClass.cls",
-            "description":"Apex Enterprise Patterns Selector Class",
-            "author":"Andy Fawcett @andyinthecloud",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Service class name (e.g. InvoiceService)",
-                    "default":"InvoiceService"
-                }
-            ]
-        },
-        {  
-            "name":"Singleton",
-            "file_name":"Singleton.cls",
-            "description":"Singleton class",
-            "author":"Anton Chernotsky",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexSingleton"
-                }
-            ]
-        },
         {  
             "name":"Trigger Handler",
             "file_name":"TriggerHandler.cls",
@@ -333,24 +72,6 @@
                     "name":"api_name",
                     "description":"Apex Class API Name",
                     "default":"MyApexClass"
-                }
-            ]
-        },
-        {
-            "name":"Trigger Handler - Comprehensive",
-            "file_name":"TriggerHandlerComprehensive.cls",
-            "description":"An class that handles all variations of trigger processing, including asynchronous processing",
-            "author":"Mike Leach @dlog",
-            "params":[
-                {
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                },
-                {
-                    "name":"object_name",
-                    "description":"Object API Name",
-                    "default":"Account"
                 }
             ]
         },
@@ -368,35 +89,9 @@
             ]
         },
         {  
-            "name":"URL Rewriter",
-            "file_name":"UrlRewriterApexClass.cls",
-            "description":"URL Rewriter class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
             "name":"Web Service",
             "file_name":"WebserviceClass.cls",
             "description":"Web service class",
-            "author":"MavensMate",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                }
-            ]
-        },
-        {  
-            "name":"Web Service Mock",
-            "file_name":"WebServiceMock.cls",
-            "description":"Web service mock class",
             "author":"MavensMate",
             "params":[  
                 {  
@@ -491,24 +186,6 @@
             ]
         },
         {  
-            "name":"Apex Trigger - All Events",
-            "file_name":"ApexTriggerAllEvents.trigger",
-            "description":"Apex Trigger with all Trigger events",
-            "author":"@alexander-brett",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Trigger API Name",
-                    "default":"MyCoolTrigger"
-                },
-                {  
-                    "name":"object_name",
-                    "description":"Object API Name",
-                    "default":"Account"
-                }
-            ]
-        },
-        {  
             "name":"Apex Trigger - Bulkified",
             "file_name":"ApexTriggerBulk.trigger",
             "description":"Bulk Apex Trigger with all Trigger events",
@@ -527,8 +204,8 @@
             ]
         },
         {
-            "name":"Apex Trigger - Comprehensive",
-            "file_name":"ApexTriggerComprehensive.trigger",
+            "name":"Apex Trigger - with handler",
+            "file_name":"ApexTriggerWithHandler.trigger",
             "description":"Bulk Apex Trigger with all Trigger events that also allows for asynchronous code",
             "author":"Mike Leach @dlog",
             "params":[
@@ -546,24 +223,6 @@
                     "name":"object_name",
                     "description":"Object API Name",
                     "default":"Account"
-                }
-            ]
-        },
-        {  
-            "name":"DomainTrigger",
-            "file_name":"DomainTrigger.trigger",
-            "description":"Apex Enterprise Patterns Domain Trigger",
-            "author":"Andy Fawcett @andyinthecloud",
-            "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Domain trigger name, must be same as Domain class name",
-                    "default":"Invoices"
-                },
-                {  
-                    "name":"object_name",
-                    "description":"API name of the Standard or Custom Object",
-                    "default":"Invoice__c"
                 }
             ]
         }
