@@ -77,6 +77,11 @@
                     "name":"object_name",
                     "description":"Object API Name",
                     "default":"Account"
+                },
+                {
+                    "name":"object_prefix",
+                    "description":"Object API prefix",
+                    "default":"Acc"
                 }
             ]
         },
