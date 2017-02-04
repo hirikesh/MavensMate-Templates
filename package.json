@@ -216,12 +216,7 @@
             "params":[
                 {
                     "name":"api_name",
-                    "description":"Apex Trigger API Name",
-                    "default":"MyCoolTrigger"
-                },
-                {
-                    "name":"object_name",
-                    "description":"Object API Name",
+                    "description":"Object Name",
                     "default":"Account"
                 }
             ]
