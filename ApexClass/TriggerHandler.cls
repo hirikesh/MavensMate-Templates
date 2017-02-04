@@ -1,4 +1,4 @@
-public class {{ object_name }}TriggerHandler() 
+public class {{ api_name  }}TriggerHandler() 
 {
 /**************************************************************************************
 -- - Author        : <Company Name>
@@ -14,47 +14,47 @@ public class {{ object_name }}TriggerHandler()
 
     //private CS_Bypass__c userBypass;  
 
-    public {{ object_name }}TriggerHandler(){
+    public {{ api_name }}TriggerHandler(){
        // userBypass = CS_Bypass__c.getInstance(UserInfo.getUserId());  
     } 
 	
-	public void handleBeforeInsert(List<{{ object_name }}> lst{{ object_prefix }}New){		
+	public void handleBeforeInsert(List<{{ api_name }}> lst{{ object_prefix }}New){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 			//if(userBypass.BypassTrigger__c == null || !userBypass.BypassTrigger__c.contains('AP10,')){}
 		}
 	}
 	
-	public void handleBeforeUpdate(List<{{ object_name }}> lst{{ object_prefix }}New,List<{{ object_name }}> lst{{ object_prefix }}Old){		
+	public void handleBeforeUpdate(List<{{ api_name }}> lst{{ object_prefix }}New,List<{{ api_name }}> lst{{ object_prefix }}Old){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 		}
 	}
 	
-	public void handleBeforeDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
+	public void handleBeforeDelete(List<{{ api_name }}> lst{{ object_prefix }}Old){		
 		for(integer i=0;i<lst{{ object_prefix }}Old.size();i++){
 		}
 	}
 	
-	public void handleBeforeUndelete(List<{{ object_name }}> lst{{ object_prefix }}New){		
+	public void handleBeforeUndelete(List<{{ api_name }}> lst{{ object_prefix }}New){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 		}
 	}
 	
-	public void handleAfterInsert(List<{{ object_name }}> lst{{ object_prefix }}New){		
+	public void handleAfterInsert(List<{{ api_name }}> lst{{ object_prefix }}New){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 		}
 	}
 	
-	public void handleAfterUpdate(List<{{ object_name }}> lst{{ object_prefix }}New,List<{{ object_name }}> lst{{ object_prefix }}Old){		
+	public void handleAfterUpdate(List<{{ api_name }}> lst{{ object_prefix }}New,List<{{ api_name }}> lst{{ object_prefix }}Old){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 		}
 	}
 	
-	public void handleAfterDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
+	public void handleAfterDelete(List<{{ api_name }}> lst{{ object_prefix }}Old){		
 		for(integer i=0;i<lst{{ object_prefix }}Old.size();i++){
 		}
 	}
 	
-	public void handleAfterUndelete(List<{{ object_name }}> lst{{ object_prefix }}New){		
+	public void handleAfterUndelete(List<{{ api_name }}> lst{{ object_prefix }}New){		
 		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
 		}
 	}
