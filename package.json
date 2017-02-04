@@ -69,7 +69,7 @@
             "author":"MavensMate",
             "params":[  
                 {
-                    "name":"object_name",
+                    "name":"api_name",
                     "description":"Object API Name",
                     "default":"Account"
                 },
