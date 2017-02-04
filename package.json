@@ -68,11 +68,6 @@
             "description":"An Interface that handles Trigger actions",
             "author":"MavensMate",
             "params":[  
-                {  
-                    "name":"api_name",
-                    "description":"Apex Class API Name",
-                    "default":"MyApexClass"
-                },
                 {
                     "name":"object_name",
                     "description":"Object API Name",
