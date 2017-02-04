@@ -1,4 +1,4 @@
-public class {{ api_name  }}TriggerHandler() 
+public class {{ api_name }}TriggerHandler() 
 {
 /**************************************************************************************
 -- - Author        : <Company Name>
