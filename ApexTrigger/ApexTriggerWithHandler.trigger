@@ -1,4 +1,4 @@
-trigger {{ api_name }}Trigger on {{ api_name }} (after delete, after insert, after undelete,after update, before delete, before insert, before update) {
+trigger {{ api_name }} on {{ object_name }} (after delete, after insert, after undelete,after update, before delete, before insert, before update) {
  /**************************************************************************************
 -- - Author        : Spoon Consulting
 -- - Description   : Trigger on {{ api_name }} events
@@ -11,7 +11,7 @@ trigger {{ api_name }}Trigger on {{ api_name }} (after delete, after insert, aft
 --------------------------------------------------------------------------------------
 **************************************************************************************/ 							
 
-    {{ api_name }}TriggerHandler handler = new {{ api_name }}TriggerHandler();
+    {{ object_name  }}TriggerHandler handler = new {{ object_name  }}TriggerHandler();
 
     if(Trigger.isBefore && Trigger.isInsert) {
         handler.handleBeforeInsert(Trigger.new);
