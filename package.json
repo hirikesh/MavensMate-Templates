@@ -216,7 +216,7 @@
             "params":[
                 {
                     "name":"api_name",
-                    "description":"Object Name",
+                    "description":"API Name",
                     "default":"Account"
                 }, 
                 {
