@@ -218,7 +218,13 @@
                     "name":"api_name",
                     "description":"Object Name",
                     "default":"Account"
-                }
+                }, 
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "description":"Object Name",
+                    "default":"Account"
+                  }
             ]
         }
     ]
