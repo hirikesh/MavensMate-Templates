@@ -14,7 +14,7 @@ public class {{ api_name }}
 
     //private CS_Bypass__c userBypass;  
 
-    public {{ api_name }}(){
+    public {{ object_name }}TriggerHandler(){
        // userBypass = CS_Bypass__c.getInstance(UserInfo.getUserId());  
     } 
 	
@@ -30,7 +30,7 @@ public class {{ api_name }}
 	}
 	
 	public void handleBeforeDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
-		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+		for(integer i=0;i<lst{{ object_prefix }}Old.size();i++){
 		}
 	}
 	
@@ -50,7 +50,7 @@ public class {{ api_name }}
 	}
 	
 	public void handleAfterDelete(List<{{ object_name }}> lst{{ object_prefix }}Old){		
-		for(integer i=0;i<lst{{ object_prefix }}New.size();i++){
+		for(integer i=0;i<lst{{ object_prefix }}Old.size();i++){
 		}
 	}
 	
